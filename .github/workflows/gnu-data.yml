@@ -27,20 +27,20 @@ jobs:
         workflow: GNU.yml
         name: gnu-result
         repo: uutils/coreutils
-        path: gnu-result-new.json
+        path: dl
 
     - name: Merge the json files
       shell: bash
       run: |
        echo "== gnu-result.json =="
-       cat gnu-result-new.json
+       cat dl/gnu-result.json
        echo "== gnu-result.json =="
        cat gnu-result.json
-       jq -s '.[0] * .[1]' gnu-result.json gnu-result-new.json > merged.json
+       jq -s '.[0] * .[1]' gnu-result.json dl/gnu-result.json > merged.json
        echo "== merged.json ="
        cat merged.json
        mv merged.json gnu-result.json
-       rm -f gnu-result-new.json
+       rm -f dl
 
     - name: Add & Commit
       uses: EndBug/add-and-commit@v7.2.1
