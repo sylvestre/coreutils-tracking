@@ -40,8 +40,14 @@ jobs:
        echo "== merged.json ="
        cat merged.json
        mv merged.json gnu-result.json
-       git commit -m "Update of the results" .
        rm -rf dl
+
+    - name: Add & Commit
+      uses: EndBug/add-and-commit@v7.2.1
+      with:
+        default_author: github_actions
+        message: "Update of the GNU data"
+        pull_strategy: '--rebase'
 
     - name: Generate the graph
       shell: bash
