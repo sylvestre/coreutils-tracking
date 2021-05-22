@@ -32,11 +32,11 @@ jobs:
     - name: Merge the json files
       shell: bash
       run: |
-       jq -s '.[0] * .[1]' gnu-result.json gnu-result-new.json > merged.json
        echo "== gnu-result.json =="
        cat gnu-result-new.json
        echo "== gnu-result.json =="
        cat gnu-result.json
+       jq -s '.[0] * .[1]' gnu-result.json gnu-result-new.json > merged.json
        echo "== merged.json ="
        cat merged.json
        mv merged.json gnu-result.json
