@@ -179,7 +179,7 @@
     "skip-seek2.log": "PASS",
     "sparse.log": "PASS",
     "stats.log": "PASS",
-    "stderr.log": "FAIL",
+    "stderr.log": "PASS",
     "unblock-sync.log": "PASS",
     "unblock.log": "PASS"
   },
@@ -559,7 +559,7 @@
     "read-only.log": "PASS",
     "readdir-bug.log": "PASS",
     "rm-readdir-fail.log": "SKIP",
-    "rm1.log": "FAIL",
+    "rm1.log": "PASS",
     "rm2.log": "PASS",
     "rm3.log": "PASS",
     "rm4.log": "PASS",
@@ -659,7 +659,7 @@
     "stty.log": "PASS"
   },
   "tac": {
-    "tac-2-nonseekable.log": "FAIL",
+    "tac-2-nonseekable.log": "PASS",
     "tac-continue.log": "PASS",
     "tac.log": "PASS"
   },
@@ -676,7 +676,7 @@
     "end-of-device.log": "PASS",
     "flush-initial.log": "PASS",
     "follow-name.log": "FAIL",
-    "follow-stdin.log": "FAIL",
+    "follow-stdin.log": "PASS",
     "inotify-dir-recreate.log": "SKIP",
     "inotify-hash-abuse.log": "PASS",
     "inotify-hash-abuse2.log": "PASS",
@@ -709,7 +709,6 @@
   },
   "timeout": {
     "timeout-blocked.log": "PASS",
-    "timeout-group.log": "SKIP",
     "timeout-large-parameters.log": "PASS",
     "timeout-parameters.log": "PASS",
     "timeout.log": "FAIL"
