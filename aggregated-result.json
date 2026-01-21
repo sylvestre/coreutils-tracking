@@ -393,7 +393,7 @@
     "tee.log": "PASS",
     "time-style.log": "PASS",
     "tsort.log": "PASS",
-    "unexpand.log": "FAIL",
+    "unexpand.log": "PASS",
     "usage_vs_getopt.log": "ERROR",
     "write-errors.log": "FAIL",
     "xattr.log": "PASS",
@@ -677,7 +677,7 @@
     "flush-initial.log": "PASS",
     "follow-name.log": "FAIL",
     "follow-stdin.log": "PASS",
-    "inotify-dir-recreate.log": "SKIP",
+    "inotify-dir-recreate.log": "PASS",
     "inotify-hash-abuse.log": "PASS",
     "inotify-hash-abuse2.log": "PASS",
     "inotify-only-regular.log": "PASS",
@@ -709,6 +709,7 @@
   },
   "timeout": {
     "timeout-blocked.log": "PASS",
+    "timeout-group.log": "SKIP",
     "timeout-large-parameters.log": "PASS",
     "timeout-parameters.log": "PASS",
     "timeout.log": "FAIL"
