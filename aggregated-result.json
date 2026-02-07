@@ -675,7 +675,7 @@
     "descriptor-vs-rename.log": "PASS",
     "end-of-device.log": "PASS",
     "flush-initial.log": "PASS",
-    "follow-name.log": "FAIL",
+    "follow-name.log": "PASS",
     "follow-stdin.log": "PASS",
     "inotify-dir-recreate.log": "PASS",
     "inotify-hash-abuse.log": "PASS",
